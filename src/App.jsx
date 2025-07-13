@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ethers } from 'ethers';
+import './App.css';
 import SimpleSwapABI from './abi/SimpleSwap.json';
 
 const CONTRACT_ADDRESS = "0xTU_CONTRATO_DEPLOYADO"; // reemplazá esto
@@ -48,7 +49,7 @@ const getPrice = async () => {
   };
 
   return (
-    <div style={{ padding: "2rem" }}>
+      <div className="container">
       <h1>SimpleSwap</h1>
 
       {!wallet ? (
